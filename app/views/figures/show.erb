@@ -11,5 +11,8 @@
       <p><%= title.name %></p>
     <% end %>
     <br></br>
+    <h3>Landmarks:</h3>
+    <% @figure.landmarks.each do |landmark| %>
+      <p><%= landmark.name %></p>
   </body>
 </html>
