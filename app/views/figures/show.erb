@@ -7,5 +7,9 @@
   <body>
     <h2><%= @figure.name %></h2>
     <h3>Titles:</h3>
+    <% @figure.titles.each do |title| %>
+      <p><%= title.name %></p>
+    <% end %>
+    <br></br>
   </body>
 </html>
