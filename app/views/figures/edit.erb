@@ -14,7 +14,8 @@
       <label>Change title:</label>
       <% @titles.each do |title| %>
         <input type="checkbox" name="figure[title_ids][]" value="<%= title.id %>"
-        id="<%= title.id %>">
+        id="<%= title.id %>"<%='checked' if @figure.titles.include?(title)%>>
+        <%= title.name %></input>
     </form>
   </body>
 </html>
