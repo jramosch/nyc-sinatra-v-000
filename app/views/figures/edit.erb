@@ -24,7 +24,9 @@
       <br></br>
       <label>Change landmark(s):</label>
       <% Landmark.all.each do |landmark| %>
-        <input type="checkbox" name="figure[landmark_ids][]" id="">
+        <input type="checkbox" name="figure[landmark_ids][]" value="<%=landmark.id%>"
+        id="<%=landmark.id%>"<%='checked' if @figure.landmarks.include?(landmark)%>>
+        <%= landmark.name %></input>
     </form>
   </body>
 </html>
