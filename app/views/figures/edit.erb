@@ -23,7 +23,8 @@
       <input type="text" name="title[name]" id="new_title">
       <br></br>
       <label>Change landmark(s):</label>
-      <% @titles.land
+      <% Landmark.all.each do |landmark| %>
+        <input type="checkbox" name="figure[landmark_ids][]" id="">
     </form>
   </body>
 </html>
