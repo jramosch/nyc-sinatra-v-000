@@ -27,4 +27,8 @@ class FiguresController < ApplicationController
     redirect to "/figures/#{@figure.id}"
   end
 
+  get '/figures/:id/edit' do
+    
+  end
+
 end
