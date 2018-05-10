@@ -27,6 +27,7 @@
         <input type="checkbox" name="figure[landmark_ids][]" value="<%=landmark.id%>"
         id="<%=landmark.id%>"<%='checked' if @figure.landmarks.include?(landmark)%>>
         <%= landmark.name %></input>
+      <% end %>
     </form>
   </body>
 </html>
